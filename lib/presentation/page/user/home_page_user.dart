@@ -62,7 +62,7 @@ class HomePageUser extends StatelessWidget {
                       padding: const EdgeInsets.all(12.0),
                       child: Text(
                         "Data Peternak",
-                        style: AppFont.semiBold.s20.copyWith(
+                        style: AppFont.semiBold.s18.copyWith(
                           color: Theme.of(context).colorScheme.secondary,
                         ),
                       ),
@@ -91,7 +91,7 @@ class HomePageUser extends StatelessWidget {
                           padding: const EdgeInsets.all(12.0),
                           child: Text(
                             "Kesehatan Ternak",
-                            style: AppFont.semiBold.s20.copyWith(
+                            style: AppFont.semiBold.s18.copyWith(
                               color: Colors.white,
                             ),
                           ),
@@ -99,7 +99,9 @@ class HomePageUser extends StatelessWidget {
                       ),
                     ),
                     InkWell(
-                      onTap: () => {},
+                      onTap: () => {
+                        Navigator.pushNamed(context, "/homepage_user/tentang")
+                      },
                       borderRadius: BorderRadius.circular(10),
                       child: Container(
                         height: MediaQuery.of(context).size.height / 4,
@@ -115,7 +117,7 @@ class HomePageUser extends StatelessWidget {
                           padding: const EdgeInsets.all(12.0),
                           child: Text(
                             "Tentang",
-                            style: AppFont.semiBold.s20.copyWith(
+                            style: AppFont.semiBold.s18.copyWith(
                               color: Theme.of(context).colorScheme.secondary,
                             ),
                           ),

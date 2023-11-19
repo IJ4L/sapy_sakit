@@ -35,6 +35,10 @@ extension AppFontSize on TextStyle {
     return copyWith(fontSize: 16);
   }
 
+  TextStyle get s18 {
+    return copyWith(fontSize: 18);
+  }
+
   TextStyle get s20 {
     return copyWith(fontSize: 20);
   }
